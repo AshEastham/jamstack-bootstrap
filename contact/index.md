@@ -8,32 +8,32 @@ eleventyNavigation:
 ---
 
 <div class="container">
-    <form name="contact" method="POST" data-netlify="true">
-        <p>
-            <label>Your Name: 
-                <input type="text" name="name" required />
+    <form class="form-control" name="contact" method="POST" data-netlify="true">
+        <div class="mb-3">
+            <label class="form-label">Your Name: 
+                <input class="form-control" type="text" name="name" required />
             </label>   
-        </p>
-        <p>
-            <label>Your Email: 
-                <input type="email" name="email" required="true" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Your Email: 
+                <input class="form-control" type="email" name="email" required="true" />
             </label>
-        </p>
-        <p>
-            <label>Your Role: 
-                <select name="role[]" multiple>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Your Role: 
+                <select class="form-select" name="role[]" multiple>
                     <option value="leader">Leader</option>
                     <option value="follower">Follower</option>
                 </select>
             </label>
-        </p>
-        <p>
-            <label>Message: 
-                <textarea name="message"></textarea>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Message: 
+                <textarea class="form-control" name="message"></textarea>
             </label>
-        </p>
-        <p>
-            <button type="submit">Send</button>
-        </p>
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-primary" type="submit">Send</button>
+        </div>
     </form>
 </div>
