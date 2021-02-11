@@ -4,7 +4,7 @@ thumbnail: /img/lemur.jpg
 title: This is my first post.
 subtitle: 1st post!
 date: 2018-05-01
-image: /img/cheetah.jpg
+image: /img/camel.jpg
 rating: 4
 tags:
   - another-tag
