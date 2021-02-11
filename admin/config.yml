@@ -19,7 +19,7 @@ collections:
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "about"
-    label: "About Me"
+    label: "About Page"
     folder: "/about"
     create: true
     slug: "{{slug}}"
@@ -28,7 +28,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "contact"
-    label: "Contact"
+    label: "Contact Page"
     folder: "/contact"
     create: true
     slug: "{{slug}}"
