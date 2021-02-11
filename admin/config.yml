@@ -18,21 +18,23 @@ collections:
       - {label: "Featured Image", name: "image", widget: "image"}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "about"
-    label: "About Page"
-    folder: "/about"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - name: "contact"
-    label: "Contact Page"
-    folder: "/contact"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "About Page"
+        name: "about"
+        folder: "/about"
+        create: true
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Contact Page"
+        name: "contact"
+        folder: "/contact"
+        create: true
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      
