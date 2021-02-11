@@ -3,12 +3,7 @@ layout: layouts/post.njk
 thumbnail: /img/lemur.jpg
 title: This is my first post.
 date: 2018-05-01
-<<<<<<< HEAD
-image: /img/cheetah.jpg
-=======
 image: /img/camel.jpg
-rating: 4
->>>>>>> 771f20ac7ddc1f3249ccaa935bb2c2af95545185
 tags:
   - another-tag
   - different
