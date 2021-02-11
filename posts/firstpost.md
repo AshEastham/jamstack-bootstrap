@@ -2,7 +2,6 @@
 layout: layouts/post.njk
 title: This is my first post.
 date: 2018-05-01
-thumbnail: /img/donkey.jpg
 tags:
   - another-tag
   - different
