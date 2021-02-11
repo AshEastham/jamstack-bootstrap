@@ -1,13 +1,15 @@
 ---
 layout: layouts/post.njk
+thumbnail: /img/lemur.jpg
 title: This is my first post.
+subtitle: 1st post!
 date: 2018-05-01
+image: /img/cheetah.jpg
+rating: 4
 tags:
   - another-tag
   - different
-image: /img/lemur.jpg
 description: This is a post on My Blog about agile frameworks.
-rating: 4
 ---
 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 
