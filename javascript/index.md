@@ -4,6 +4,7 @@ title: JavaScript
 templateClass: tmpl-post
 eleventyNavigation:
   key: JavaScript
+  children: [Practicals One , Functions & Control Flow]
   order: 5
 ---
 

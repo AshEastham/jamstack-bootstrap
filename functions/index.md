@@ -4,6 +4,7 @@ title: Functions & Control Flow
 templateClass: tmpl-post
 eleventyNavigation:
   key: Functions & Control Flow
+  parent: JavaScript
   order: 6
 ---
 

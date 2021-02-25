@@ -27,7 +27,18 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav">
               {%- for entry in collections.all | eleventyNavigation %}
-                <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
+                {% if entry.children.length %}
+                  <li class="nav-item dropdown">
+                    <a href="{{ entry.url | url }}" class="nav-link dropdown-toggle" id="navbarDropdown" role="buttons" data-bs-toggle="dropdown" aria-expanded="false">{{ entry.title }}</a>
+                  </li>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    {% for child in entry.children %}
+                      <a class="dropdown-item" href="{{ child.url | url }}">{{ child.title }}</a>
+                    {%- endfor %}
+                  </div>
+                {% else %}
+                  <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
+                {% endif %}
               {%- endfor %}
             </ul>
           </div>
