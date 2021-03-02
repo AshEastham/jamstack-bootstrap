@@ -29,13 +29,13 @@
               {%- for entry in collections.all | eleventyNavigation %}
                 {% if entry.children.length %}
                   <li class="nav-item dropdown">
-                    <a href="{{ entry.url | url }}" class="nav-link dropdown-toggle" id="navbarDropdown" role="buttons" data-bs-toggle="dropdown" aria-expanded="false">{{ entry.title }}</a>
+                    <a href="{{ entry.url | url }}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">{{ entry.title }}</a>
+                    <ul class="dropdown-menu">
+                      {% for child in entry.children %}
+                        <li><a class="dropdown-item" href="{{ child.url | url }}">{{ child.title }}</a></li>
+                      {%- endfor %}
+                    </ul>
                   </li>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    {% for child in entry.children %}
-                      <a class="dropdown-item" href="{{ child.url | url }}">{{ child.title }}</a>
-                    {%- endfor %}
-                  </div>
                 {% else %}
                   <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
                 {% endif %}
